@@ -158,10 +158,12 @@ textarea {
 .blog-gallery-item {
   width: 20em;
   height: 42em;
-  margin: 7em 2em 2em 2em;
+  margin: 2em 2em 2em 2em;
 }
 .blog-gallery-item img {
   width: 20em;
+  height: 20em;
+  object-fit: cover;
 }
 .about-topline {
   margin-top: 9em;

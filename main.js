@@ -1,9 +1,3 @@
-// $(document).ready(function () {
-//   $(".carousel").carousel({
-//     interval: 2000,
-//   });
-// });
-
 function myFunction() {
   var un = document.forms["myForm"]["Uname"].value;
   var pw = document.forms["myForm"]["Pass"].value;
@@ -12,18 +6,7 @@ function myFunction() {
   } else {
     alert("Invalid User Name and Password");
   }
-  console.log(myFunction);
 }
-
-// function login(loginForm) {
-//   if (loginForm.username.value && loginForm.password.value) {
-//     var username = document.getElementById("username").value;
-//     document.write("<html><body><h1><center>");
-//     document.write("Welcome" + "");
-//     document.write("username");
-//     document.write("</center></h1></body></html>");
-//   } else alert("Please Enter a username and password");
-// };
 
 // LIKE AND DISLIKE BUTTON
 
@@ -44,7 +27,8 @@ dislikebtn.addEventListener("click", () => {
 
 // SHARE BUTTON
 
-const link = "https://openjavascript.info/2022/08/22/using-json-in-javascript";
+// const link = "https://openjavascript.info/2022/08/22/using-json-in-javascript";
+const link = "https://michaels042.github.io/Deo-Gracias-Blog/";
 const msg = encodeURIComponent("Awesome article, a must read");
 const title = encodeURIComponent(document.querySelector("title").textContent);
 
