@@ -1,43 +1,51 @@
 * {
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
 }
 
 nav {
   padding: 1em !important;
+}
+.nav-item {
+  font-size: 20px;
 }
 .allStories {
   margin-top: 2em;
 }
 .hero-bg {
   width: 100%;
-  clip-path: circle(60% at 50% 87%);
+  clip-path: circle(60% at 50% 97%);
   background: transparent !important;
 }
 .hero-scrollingText {
-  background-image: url(./blog-images/everest3.png);
+  background-image: url(./blog-images/everestX1920jpg);
   height: 130vh;
   width: 100%;
   background-attachment: fixed;
+  background-position: center;
 }
 .heroInnerText {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10em;
-  margin-top: 15em;
-  color: #1d172e;
-  font-family: "Times New Roman", Times, serif;
-  background: transparent !important;
+  /* padding-top: 10em; */
+  /* margin-top: -2em; */
+  color: #fff;
+  /* font-family: "Times New Roman", Times, serif; */
+  background: rgba(0, 0, 0, 0.4) !important;
+  height: 130vh;
 }
 .heroInnerText h1 {
+  padding-top: 5em;
   font-size: 500%;
   background: transparent !important;
 }
 
 .heroInnerText h4 {
   font-size: 200%;
+  font-weight: 700;
   letter-spacing: 1px;
-  background: transparent !important;
+  color: #fff;
 }
 
 .authorImage img {
@@ -48,10 +56,16 @@ nav {
 .large-space {
   height: 2em;
 }
-.author-text {
-  width: 60%;
-  margin-left: 12em;
+
+.author-text,
+.authorImage,
+.podImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 .readMore {
   border: #000 solid 1px;
 }
@@ -78,7 +92,7 @@ nav {
 textarea {
   background-color: #bcafbd;
   color: #000;
-  border: solid rgb(48, 47, 47);
+  border-bottom: solid rgb(48, 47, 47);
 }
 .sub {
   border: #000 solid 1px;
@@ -92,6 +106,10 @@ textarea {
 }
 .podcast {
   margin: 2em 0;
+}
+.podcast a {
+  text-decoration: none;
+  color: rgb(49, 47, 47);
 }
 .podcasts img {
   border: 5px solid #c3b6e9;
@@ -119,4 +137,139 @@ textarea {
 .about-text {
   margin-top: 1em;
   margin-bottom: 4em;
+}
+
+.slider-wrap {
+  display: flex !important;
+  justify-content: space-between;
+  width: 90% !important;
+}
+.blog-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+.blog-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80em;
+}
+.blog-gallery-item {
+  width: 20em;
+  height: 42em;
+  margin: 7em 2em 2em 2em;
+}
+.blog-gallery-item img {
+  width: 20em;
+}
+.about-topline {
+  margin-top: 9em;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3em;
+}
+.login form {
+  width: 400px;
+  justify-content: center;
+}
+footer {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.voting {
+  display: flex;
+  justify-content: center;
+  height: 1.5em;
+}
+.voting input {
+  width: 50px;
+  border: none;
+  pointer-events: none;
+  background: transparent;
+}
+.voting button {
+  border: none;
+  background-color: transparent;
+  color: #4f4768;
+}
+.voting button:active {
+  color: #000;
+  transform: scale(1.2);
+}
+.viewComments {
+  font-size: 20px;
+  text-decoration: none;
+}
+.viewComments a {
+  text-decoration: none;
+  color: #4f4768;
+}
+.twitter {
+  text-decoration: none;
+  color: rgb(48, 28, 48);
+}
+
+/* ............................................. */
+/* ............................................. */
+/* ............................................. */
+
+@media (max-width: 1500px) {
+  .heroInnerText h1 {
+    padding-top: 0.3em;
+  }
+
+  .heroInnerText {
+    padding-top: 52%;
+    margin-top: -32em;
+  }
+  .hero-bg {
+    width: 100%;
+    clip-path: circle(60% at 50% 117%);
+    background: transparent !important;
+  }
+}
+@media (max-width: 900px) {
+  .heroInnerText h1 {
+    padding-top: 0.3em;
+    font-size: 400%;
+  }
+
+  .heroInnerText h4 {
+    font-size: 150%;
+  }
+  .heroInnerText {
+    padding-top: 92%;
+    margin-top: -22em;
+  }
+  .hero-bg {
+    width: 100%;
+    clip-path: circle(60% at 50% 87%);
+    background: transparent !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .heroInnerText h1 {
+    padding-top: 8em;
+    font-size: 250%;
+  }
+
+  .heroInnerText h4 {
+    font-size: 95%;
+  }
+  .heroInnerText {
+    padding-top: 92%;
+    margin-top: -22em;
+  }
+  .hero-bg {
+    width: 100%;
+    clip-path: circle(60% at 50% 87%);
+    background: transparent !important;
+  }
 }

@@ -14,14 +14,8 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
     <title>Spirit Blog</title>
   </head>
-
   <body>
     <section class="container-fluid navbar-light bg-light">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -49,10 +43,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="podcast.html">Podcast</a>
+                <a class="nav-link" href="./podcast.html">Podcast</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="./about.html">About</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -70,239 +64,280 @@
         </div>
       </nav>
 
-      <!-- <section class="hero-section1 col-md-12 mt-0 pt-0">
-        <div class="large-space"></div>
-        <div class="class hero-bg">
-          <div class="hero-scrollingText">
-            <div class="heroInnerText">
-              <h1>Leap of Faith</h1>
-              <h4>Trusting God is a life long journey. Don't walk alone!</h4>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
       <div class="allStories d-flex justify-content-center">
-        <h1 class="py-5">Podcast</h1>
+        <h1 class="my-5">Podcast</h1>
       </div>
-
-      <div class="container-fluid py2 my-4">
-        <hr class="mx-5" />
+      <div class="container-fluid py-4 my-4">
+        <hr />
       </div>
-
       <section>
         <div class="container">
-          <div class="row podacst-wrapper">
+          <div class="row">
             <div class="large-space"></div>
-            <div class="col-md-4">
+            <div class="col-md-6 my-5 d-flex justify-content-end">
               <div class="podcast-image">
                 <img src="./blog-images/isabella-head.webp" alt="" />
               </div>
             </div>
-            <div class="col-md-8">
-              <div class="author-podcast">
-                <h1 class="my-5">Lessons of Faith</h1>
-                <p>Isabella Reeves</p>
-                <div class="icon-podcast">
-                  <i class="bi bi-rss"></i>
-                  <i class="bi bi-spotify"></i>
-                  <i class="bi bi-soundwave"></i>
-                  <i class="bi bi-spotify"></i>
-                </div>
-                <!-- <a class="btn btn-light readMore" href="#">Read More</a> -->
+            <div class="col-md-6 my-5 d-flex justify-content-start">
+              <div class="author-text">
+                <h2 class="my-5">
+                  Hi, I'm Isabella!<br />So good to have you here.
+                </h2>
+                <p>
+                  I'm a paragraph. Click here to add your own text and edit me.
+                  It’s easy. Just click “Edit Text” or double click me to add
+                  your own content and make changes to the font. I’m a great
+                  place for you to tell a story and let your users know a little
+                  more about you.
+                </p>
+                <a class="btn btn-light readMore" href="podcast.html">Listen</a>
               </div>
             </div>
-          </div>
-          <div class="row podacst-wrapper my-5">
-            <p>
-              All the info, audio or video that's needed to show and play your
-              podcast episodes is contained in the RSS feed. Head to Settings
-              and connect your podcast's RSS feed.
-            </p>
           </div>
         </div>
       </section>
 
-      <section class="container">
-        <div class="row podacst-wrapper my-5">
-          <div class="col-md-4">
-            <div class="podcasts">
-              <div class="podcast container">
-                <a href="#">
-                  <img src="./blog-images/person-book.webp" alt="" />
-                  <h5 class="my-4">Finding Fulfilment in Community Life</h5>
-                  <div class="mt-3 d-flex justify-content-between">
-                    <p>Aug 21, 2022 . 2min</p>
-                  </div>
-                  <p class="d-flex flex-wrap">
-                    Do you have video episodes in your podcast? Any podacst
-                    episodes will get a video-player
-                  </p>
-                </a>
+      <section class="blog-wrapper">
+        <div class="blog-gallery">
+          <div class="mb-5 blog-gallery-item">
+            <div class="container">
+              <img src="./blog-images/p4y2rr.jpg" alt="" />
+            </div>
+            <div class="mt-3 d-flex justify-content-between container">
+              <p>Aug 21, 2022 . 2min</p>
+
+              <!-- SOCIAL MEDIA SHARE -->
+              <a class="twitter">
+                &nbsp Share&nbsp<i class="bi bi-twitter"></i
+              ></a>
+            </div>
+            <div class="container">
+              <figure>
+                <figcaption><h4>Never be the same:</h4></figcaption>
+                <audio
+                  controls
+                  src="/blog-audio/Never_be_the_same.mpeg"
+                ></audio>
+              </figure>
+            </div>
+
+            <hr class="mt-2 mb-0" />
+            <div class="viewComments d-flex mt-3">
+              <!-- LIKES AND DISLIKES -->
+
+              <div class="voting">
+                <button id="likebtn">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </button>
+                <input type="number" id="input1" value="0" name="" />
+                <button id="dislikebtn">
+                  <i class="bi bi-hand-thumbs-down"></i>
+                </button>
+                <input type="number" id="input2" value="0" name="" />
               </div>
+              <a href="#"><p>0 comments</p></a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="podcasts">
-              <div class="podcast container">
-                <a href="#">
-                  <img src="./blog-images/person-book.webp" alt="" />
-                  <h5 class="my-4">Finding Fulfilment in Community Life</h5>
-                  <div class="mt-3 d-flex justify-content-between">
-                    <p>Aug 21, 2022 . 2min</p>
-                  </div>
-                  <p class="d-flex flex-wrap">
-                    Do you have video episodes in your podcast? Any podacst
-                    episodes will get a video-player
-                  </p>
-                </a>
+          <div class="mb-5 blog-gallery-item">
+            <div class="container">
+              <img src="./blog-images/everestx612.jpg" alt="" />
+            </div>
+            <div class="mt-3 d-flex justify-content-between container">
+              <p>Aug 21, 2022 . 2min</p>
+
+              <!-- SOCIAL MEDIA SHARE -->
+              <a class="twitter">
+                &nbsp Share&nbsp<i class="bi bi-twitter"></i
+              ></a>
+            </div>
+            <div class="container">
+              <figure>
+                <figcaption><h4>Never be the same:</h4></figcaption>
+                <audio
+                  controls
+                  src="/blog-audio/Never_be_the_same.mpeg"
+                ></audio>
+              </figure>
+            </div>
+
+            <hr class="mt-2 mb-0" />
+            <div class="viewComments d-flex mt-3">
+              <!-- LIKES AND DISLIKES -->
+
+              <div class="voting">
+                <button id="likebtn">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </button>
+                <input type="number" id="input1" value="0" name="" />
+                <button id="dislikebtn">
+                  <i class="bi bi-hand-thumbs-down"></i>
+                </button>
+                <input type="number" id="input2" value="0" name="" />
               </div>
+              <a href="#"><p>0 comments</p></a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="podcasts">
-              <div class="podcast container">
-                <a href="#">
-                  <img src="./blog-images/person-book.webp" alt="" />
-                  <h5 class="my-4">Finding Fulfilment in Community Life</h5>
-                  <div class="mt-3 d-flex justify-content-between">
-                    <p>Aug 21, 2022 . 2min</p>
-                  </div>
-                  <p class="d-flex flex-wrap">
-                    Do you have video episodes in your podcast? Any podacst
-                    episodes will get a video-player
-                  </p>
-                </a>
+          <div class="mb-5 blog-gallery-item">
+            <div class="container">
+              <img src="./blog-images/person-book.webp" alt="" />
+            </div>
+            <div class="mt-3 d-flex justify-content-between container">
+              <p>Aug 21, 2022 . 2min</p>
+
+              <!-- SOCIAL MEDIA SHARE -->
+              <a class="twitter">
+                &nbsp Share&nbsp<i class="bi bi-twitter"></i
+              ></a>
+            </div>
+            <div class="container">
+              <figure>
+                <figcaption><h4>Never be the same:</h4></figcaption>
+                <audio
+                  controls
+                  src="/blog-audio/Never_be_the_same.mpeg"
+                ></audio>
+              </figure>
+            </div>
+
+            <hr class="mt-2 mb-0" />
+            <div class="viewComments d-flex mt-3">
+              <!-- LIKES AND DISLIKES -->
+
+              <div class="voting">
+                <button id="likebtn">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </button>
+                <input type="number" id="input1" value="0" name="" />
+                <button id="dislikebtn">
+                  <i class="bi bi-hand-thumbs-down"></i>
+                </button>
+                <input type="number" id="input2" value="0" name="" />
               </div>
+              <a href="#"><p>0 comments</p></a>
             </div>
           </div>
-        </div>
-        <div class="row podacst-wrapper my-5">
-          <div class="col-md-4">
-            <div class="podcasts">
-              <div class="podcast container">
-                <a href="#">
-                  <img src="./blog-images/person-book.webp" alt="" />
-                  <h5 class="my-4">Finding Fulfilment in Community Life</h5>
-                  <div class="mt-3 d-flex justify-content-between">
-                    <p>Aug 21, 2022 . 2min</p>
-                  </div>
-                  <p class="d-flex flex-wrap">
-                    Do you have video episodes in your podcast? Any podacst
-                    episodes will get a video-player
-                  </p>
-                </a>
+          <div class="mb-5 blog-gallery-item">
+            <div class="container">
+              <img src="./blog-images/person-book.webp" alt="" />
+            </div>
+            <div class="mt-3 d-flex justify-content-between container">
+              <p>Aug 21, 2022 . 2min</p>
+
+              <!-- SOCIAL MEDIA SHARE -->
+              <a class="twitter">
+                &nbsp Share&nbsp<i class="bi bi-twitter"></i
+              ></a>
+            </div>
+            <div class="container">
+              <figure>
+                <figcaption><h4>Never be the same:</h4></figcaption>
+                <audio
+                  controls
+                  src="/blog-audio/Never_be_the_same.mpeg"
+                ></audio>
+              </figure>
+            </div>
+
+            <hr class="mt-2 mb-0" />
+            <div class="viewComments d-flex mt-3">
+              <!-- LIKES AND DISLIKES -->
+
+              <div class="voting">
+                <button id="likebtn">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </button>
+                <input type="number" id="input1" value="0" name="" />
+                <button id="dislikebtn">
+                  <i class="bi bi-hand-thumbs-down"></i>
+                </button>
+                <input type="number" id="input2" value="0" name="" />
               </div>
+              <a href="#"><p>0 comments</p></a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="podcasts">
-              <div class="podcast container">
-                <a href="#">
-                  <img src="./blog-images/person-book.webp" alt="" />
-                  <h5 class="my-4">Finding Fulfilment in Community Life</h5>
-                  <div class="mt-3 d-flex justify-content-between">
-                    <p>Aug 21, 2022 . 2min</p>
-                  </div>
-                  <p class="d-flex flex-wrap">
-                    Do you have video episodes in your podcast? Any podacst
-                    episodes will get a video-player
-                  </p>
-                </a>
+          <div class="mb-5 blog-gallery-item">
+            <div class="container">
+              <img src="./blog-images/person-book.webp" alt="" />
+            </div>
+            <div class="mt-3 d-flex justify-content-between container">
+              <p>Aug 21, 2022 . 2min</p>
+
+              <!-- SOCIAL MEDIA SHARE -->
+              <a class="twitter">
+                &nbsp Share&nbsp<i class="bi bi-twitter"></i
+              ></a>
+            </div>
+            <div class="container">
+              <figure>
+                <figcaption><h4>Never be the same:</h4></figcaption>
+                <audio
+                  controls
+                  src="/blog-audio/Never_be_the_same.mpeg"
+                ></audio>
+              </figure>
+            </div>
+
+            <hr class="mt-2 mb-0" />
+            <div class="viewComments d-flex mt-3">
+              <!-- LIKES AND DISLIKES -->
+
+              <div class="voting">
+                <button id="likebtn">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </button>
+                <input type="number" id="input1" value="0" name="" />
+                <button id="dislikebtn">
+                  <i class="bi bi-hand-thumbs-down"></i>
+                </button>
+                <input type="number" id="input2" value="0" name="" />
               </div>
+              <a href="#"><p>0 comments</p></a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="podcasts">
-              <div class="podcast container">
-                <a href="#">
-                  <img src="./blog-images/person-book.webp" alt="" />
-                  <h5 class="my-4">Finding Fulfilment in Community Life</h5>
-                  <div class="mt-3 d-flex justify-content-between">
-                    <p>Aug 21, 2022 . 2min</p>
-                  </div>
-                  <p class="d-flex flex-wrap">
-                    Do you have video episodes in your podcast? Any podacst
-                    episodes will get a video-player
-                  </p>
-                </a>
-              </div>
+          <div class="mb-5 blog-gallery-item">
+            <div class="container">
+              <img src="./blog-images/person-book.webp" alt="" />
             </div>
-          </div>
-        </div>
-        <div class="slidingAudio">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block w-100"
-                  src="./blog-images/furnitureblog.jpg"
-                  alt="First slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100"
-                  src="./blog-images/mountain-top.jpg"
-                  alt="Second slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100"
-                  src="./blog-images/Rectangle 1.png"
-                  alt="Third slide"
-                />
-              </div>
+            <div class="mt-3 d-flex justify-content-between container">
+              <p>Aug 21, 2022 . 2min</p>
+
+              <!-- SOCIAL MEDIA SHARE -->
+              <a class="twitter">
+                &nbsp Share&nbsp<i class="bi bi-twitter"></i
+              ></a>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="container">
+              <figure>
+                <figcaption><h4>Never be the same:</h4></figcaption>
+                <audio
+                  controls
+                  src="/blog-audio/Never_be_the_same.mpeg"
+                ></audio>
+              </figure>
+            </div>
+
+            <hr class="mt-2 mb-0" />
+            <div class="viewComments d-flex mt-3">
+              <!-- LIKES AND DISLIKES -->
+
+              <div class="voting">
+                <button id="likebtn">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </button>
+                <input type="number" id="input1" value="0" name="" />
+                <button id="dislikebtn">
+                  <i class="bi bi-hand-thumbs-down"></i>
+                </button>
+                <input type="number" id="input2" value="0" name="" />
+              </div>
+              <a href="#"><p>0 comments</p></a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ....FOOTER SECTTION -->
+      <!-- FOOTER SECTTION  -->
 
       <section>
         <div>
@@ -370,16 +405,19 @@
           </div>
         </div>
       </section>
+
       <div class="row legal d-flex justify-content-center">
-        © 2023 by by Leap of Faith. Proudly created with Wix.com
+        © 2022 by Leap of Faith. Proudly created with Wix.com
       </div>
     </section>
+
     <!-- JavaScript Bundle with Popper -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
